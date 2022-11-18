@@ -7,7 +7,7 @@ RUN apk add git
 
 WORKDIR /usr/src/app
 
-RUN git clone git@github.com:Unf0rgiv3n/minimal-web-app.git
+RUN git clone https://github.com/Unf0rgiv3n/minimal-web-app.git
 
 EXPOSE 80
 ENTRYPOINT ["/usr/src/app/src/bootstrap.sh"]
