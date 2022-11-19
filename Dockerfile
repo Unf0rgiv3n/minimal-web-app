@@ -12,4 +12,5 @@ RUN chmod -R 777 /usr/src/app
 RUN pip install -r ./minimal-web-app/src/requirements.txt
 
 EXPOSE 80
+#ENTRYPOINT ["sleep", "3600"]
 ENTRYPOINT ["/usr/src/app/minimal-web-app/src/bootstrap.sh"]
