@@ -9,8 +9,8 @@ WORKDIR /usr/src/app
 
 RUN git clone https://github.com/Unf0rgiv3n/minimal-web-app.git /usr/src/app
 RUN chmod -R 777 /usr/src/app
-RUN pip install -r ./minimal-web-app/src/requirements.txt
+RUN pip install -r ./src/requirements.txt
 
 EXPOSE 80
 #ENTRYPOINT ["sleep", "3600"]
-ENTRYPOINT ["/usr/src/app/minimal-web-app/src/bootstrap.sh"]
+ENTRYPOINT ["/usr/src/app/src/bootstrap.sh"]
